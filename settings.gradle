@@ -1,2 +1,2 @@
-rootProject.name='Proyecto_PDM'
+rootProject.name='menu_app'
 include ':app'
