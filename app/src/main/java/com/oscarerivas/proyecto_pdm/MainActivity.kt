@@ -2,6 +2,7 @@ package com.oscarerivas.proyecto_pdm
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.menu_app.R
 
 class MainActivity : AppCompatActivity() {
 
