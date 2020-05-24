@@ -8,8 +8,8 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_categoria">Categoria</string>
-    <string name="menu_metodos">metodos</string>
+    <string name="menu_categoria">Categories</string>
+    <string name="menu_metodos">Methods</string>
 
     <string name="home_second">Home Second</string>
     <string name="Ttitle_app">Bill Money App</string>
