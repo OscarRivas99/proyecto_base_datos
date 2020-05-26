@@ -61,18 +61,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
-
-
-
-    
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="380dp"
-        android:layout_height="75dp"
-        android:src="@drawable/ic_hogar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
-
+  
 </androidx.constraintlayout.widget.ConstraintLayout>
     </layout>
