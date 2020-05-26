@@ -5,10 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.menu_app.R
+import com.example.menu_app.databinding.FragmentCategoriaBinding
+import com.example.menu_app.databinding.FragmentHomeBinding
 
 class CategoriFragment : Fragment() {
 
@@ -18,8 +21,8 @@ class CategoriFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
 
-        val root = inflater.inflate(R.layout.fragment_categoria, container, false)
-        val textView: TextView = root.findViewById(R.id.txt_categoria)
-        return root
+
+        val binding = DataBindingUtil.inflate<FragmentCategoriaBinding>(inflater, R.layout.fragment_categoria, container, false)
+        return binding.root
     }
 }
