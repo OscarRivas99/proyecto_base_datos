@@ -9,8 +9,18 @@
 
     <string name="menu_home">Home</string>
     <string name="menu_categoria">Categories</string>
-    <string name="menu_metodos">Methods</string>
+    <string name="menu_metodos">Add Movement</string>
 
     <string name="home_second">Home Second</string>
     <string name="Ttitle_app">Bill Money App</string>
+
+    <string name="Avisos">Alert</string>
+    <string name="Ingresar">ingresar</string>
+    <string name="recordatorio">Ingrese su recordatorio</string>
+    <string name="recordatori">Ingrese la fecha</string>
+    <string name="ingreso">Ingrese la fecha</string>
+    <string name="date">Ingrese la fecha</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

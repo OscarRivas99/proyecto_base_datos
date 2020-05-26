@@ -68,8 +68,7 @@ class MetodosFragment : Fragment() {
             Toast.makeText(context, "Day:" + dayOfMonth + "\nMonth: " + (month+1) + "\nYear: " + year, Toast.LENGTH_SHORT).show()
         }, year , month , day)
 
-        
-        datepicker.show()
+         datepicker.show()
     }
 
 

@@ -30,4 +30,10 @@
             android:id="@+id/action_nav_metodos_to_nav_categoria"
             app:destination="@id/nav_categoria" />
     </fragment>
+
+    <fragment
+        android:id="@+id/nav_avisos"
+        android:name="com.example.menu_app.ui.avisos.AvisosFragments"
+        android:label="Alert"
+        tools:layout="@layout/fragment_avisos" />
 </navigation>
