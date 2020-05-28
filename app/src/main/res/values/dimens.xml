@@ -7,4 +7,5 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="title_dimen">20sp</dimen>
     <dimen name="big_wide">24dp</dimen>
+    <dimen name="vertical_bias_btnDown_to_btnUp">0.252</dimen>
 </resources>
