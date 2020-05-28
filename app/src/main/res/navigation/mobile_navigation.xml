@@ -19,7 +19,11 @@
         android:id="@+id/nav_categoria"
         android:name="com.example.menu_app.ui.gallery.CategoriFragment"
         android:label="@string/menu_categoria"
-        tools:layout="@layout/fragment_categoria" />
+        tools:layout="@layout/fragment_categoria" >
+        <action
+            android:id="@+id/action_nav_categoria_to_nav_metodos"
+            app:destination="@id/nav_metodos" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_metodos"
@@ -29,6 +33,10 @@
         <action
             android:id="@+id/action_nav_metodos_to_nav_categoria"
             app:destination="@id/nav_categoria" />
+        <argument
+            android:name="categoria"
+            app:argType="string"
+            android:defaultValue="----categoria----" />
     </fragment>
 
     <fragment

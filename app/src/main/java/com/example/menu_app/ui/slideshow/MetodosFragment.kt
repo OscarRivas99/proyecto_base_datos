@@ -37,13 +37,38 @@ class MetodosFragment : Fragment() {
             container,
             false
         )
+
+
+
         val sendMount = binding.sendMountButton
         val et_mount = binding.etMount
         val date_button = binding.showDatepickerButton
         val tv_date = binding.fecha
         val notes = binding.notes
 
+        val categoria = binding.tvShowCategorie
+        val imagen = binding.ivCategorie
 
+        categoria.text = arguments?.getString("categoria")
+
+
+
+        when (categoria.text) {
+            "Alimento" ->  imagen.setImageResource(R.drawable.alimento)
+            "Transporte" ->  imagen.setImageResource(R.drawable.transporte)
+            "Hogar" ->  imagen.setImageResource(R.drawable.hogar)
+            "Automovil" ->  imagen.setImageResource(R.drawable.automovil)
+            "Compras" ->  imagen.setImageResource(R.drawable.compras)
+            "Entretenimiento" ->  imagen.setImageResource(R.drawable.entretenimiento)
+            "Mascota" ->  imagen.setImageResource(R.drawable.mascota)
+            "Ropa" ->  imagen.setImageResource(R.drawable.ropa)
+            "Salud" ->  imagen.setImageResource(R.drawable.salud)
+            "Viajes" ->  imagen.setImageResource(R.drawable.viajes)
+            "Gimnasio" ->  imagen.setImageResource(R.drawable.gimnacio)
+
+            else -> {
+            }
+        }
 
         date_button.setOnClickListener {
 
@@ -52,7 +77,7 @@ class MetodosFragment : Fragment() {
         }
 
         sendMount.setOnClickListener {
-            Toast.makeText(context, "Mount: $${et_mount.text.toString() + " ${tv_date.text}" + " Description: ${notes.text}"}", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Mount: $${et_mount.text.toString() + " ${tv_date.text}" + " Description: ${notes.text}" + " Categoria: ${categoria.text}"}", Toast.LENGTH_SHORT).show()
         }
 
         return binding.root
