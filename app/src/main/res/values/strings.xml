@@ -19,7 +19,7 @@
     <string name="recordatorio">Ingrese su recordatorio</string>
     <string name="recordatori">Ingrese la fecha</string>
     <string name="ingreso">Ingrese la fecha</string>
-    <string name="date">"Date: 28/05/20"</string>
+    <string name="date">"Fecha: 28/05/20"</string>
 
     <string-array name="categories">
         <item>Transporte</item>

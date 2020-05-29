@@ -54,7 +54,7 @@ class MetodosFragment : Fragment() {
 
 
         when (categoria.text) {
-            "Alimento" ->  imagen.setImageResource(R.drawable.alimento)
+            "Alimentos" ->  imagen.setImageResource(R.drawable.alimento)
             "Transporte" ->  imagen.setImageResource(R.drawable.transporte)
             "Hogar" ->  imagen.setImageResource(R.drawable.hogar)
             "Automovil" ->  imagen.setImageResource(R.drawable.automovil)
@@ -86,7 +86,7 @@ class MetodosFragment : Fragment() {
 
     private fun setup_title() {
         (activity as AppCompatActivity)
-            .supportActionBar?.title = "Movement Detail"
+            .supportActionBar?.title = "Detalles de movimiento"
     }
 
 
