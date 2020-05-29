@@ -6,7 +6,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#BAF83117"
+        android:background="#ffffff"
         tools:context=".ui.slideshow.MetodosFragment">
 
         <TextView
@@ -14,49 +14,46 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/big_wide"
-            android:text="Enter Movement Data"
+            android:text="Ingresar datos de movimiento"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColor="@color/cardview_light_background"
             android:textSize="23sp"
             android:textStyle="bold"
-            app:fontFamily="@font/autour_one"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            />
 
         <EditText
             android:id="@+id/et_mount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="64dp"
             android:ems="10"
-            android:hint="Enter mount $100"
-            android:inputType="numberDecimal"
-
             android:textColor="@color/cardview_dark_background"
-            android:textColorHint="@color/cardview_light_background"
+            android:hint="Ingresar monto (en $)"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/label_money" />
+            app:layout_constraintTop_toBottomOf="@+id/label_money"
+            android:gravity="center_horizontal"/>
 
 
         <Button
             android:id="@+id/show_datepicker_button"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/big_wide"
             android:layout_marginLeft="@dimen/big_wide"
             android:layout_marginTop="32dp"
             android:layout_marginEnd="24dp"
             android:layout_marginRight="24dp"
-            android:background="#F31991"
+            android:background="@drawable/bg_pink"
             android:shadowColor="#FFFFFF"
-            android:text="Pick Date"
+            android:text="Seleccionar fecha"
             android:textAllCaps="false"
             android:textColor="#ffffff"
-            android:textFontWeight="20"
-
-            android:textSize="18sp"
+            android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -71,9 +68,7 @@
             android:layout_marginEnd="24dp"
             android:layout_marginRight="24dp"
             android:text="@string/date"
-            android:textColor="#9EFFFFFF"
-            android:textSize="20dp"
-            app:fontFamily="@font/autour_one"
+            android:textSize="20sp"
             app:layout_constraintBaseline_toBaselineOf="@+id/show_datepicker_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/show_datepicker_button" />
@@ -82,26 +77,28 @@
             android:id="@+id/notes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="56dp"
             android:ems="10"
-            android:gravity="start|top"
-            android:hint="Add a description"
+            android:hint="Añadir descripción"
+            android:textAlignment="center"
             android:inputType="textMultiLine"
-            android:textColorHint="@color/cardview_light_background"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/show_datepicker_button" />
+            app:layout_constraintTop_toBottomOf="@+id/show_datepicker_button"
+            android:gravity="center_horizontal" />
 
 
 
         <Button
             android:id="@+id/send_mount_button"
-
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="32dp"
-
-            android:background="@drawable/icon_check"
+            android:textAllCaps="false"
+            android:text="Confirmar"
+            android:textSize="18sp"
+            android:textColor="#058D8D"
+            android:background="@drawable/bg_aqua"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -137,7 +134,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/tv_show_categorie"
             app:layout_constraintTop_toBottomOf="@+id/notes"
-            app:srcCompat="@drawable/alimento" />
+            app:srcCompat="@drawable/ic_brightness_1_black_24dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
