@@ -1,7 +1,11 @@
 package com.example.menu_app
 
+import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.view.Menu
+import android.view.View
+import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -16,6 +20,7 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import kotlinx.android.synthetic.main.fragment_metodos.*
 
@@ -28,8 +33,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
-/*
-* probando pull */
+
+        //animacion inicio
+
+
+
+
+/* probando pull */
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
         val navController = findNavController(R.id.nav_host_fragment)
@@ -52,4 +62,12 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
+
+
+    }
+
+class DashBoardActivity {
+
 }
+
