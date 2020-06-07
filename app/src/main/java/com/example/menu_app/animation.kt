@@ -7,6 +7,7 @@ import android.os.Handler
 import android.view.View
 import android.view.animation.AnimationUtils
 import com.example.menu_app.ui.login.login2
+import kotlinx.android.synthetic.main.activity_animation.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class animation : AppCompatActivity() {
