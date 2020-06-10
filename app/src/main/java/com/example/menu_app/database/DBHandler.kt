@@ -18,6 +18,7 @@ class DBHandler(val context: Context) : SQLiteOpenHelper(context, DB_NAME, null,
 
         db.execSQL(createMoneyAppTable)
 
+
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {

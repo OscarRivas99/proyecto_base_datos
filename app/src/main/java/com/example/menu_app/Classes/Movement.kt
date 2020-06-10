@@ -6,6 +6,7 @@ class Movement {
     var name = ""
     var username = ""
     var date = " "
+
     var createdAt = ""
 
 

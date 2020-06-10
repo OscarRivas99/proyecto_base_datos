@@ -9,4 +9,5 @@ const val COL_ID = "id"
 const val COL_USER_NAME = "username"
 const val COL_CREATED_AT = "createdAt"
 const val COL_NAME = "name"
+
 const val COL_DATE = "date"
