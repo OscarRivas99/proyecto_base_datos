@@ -24,7 +24,6 @@ class DBHandler(val context: Context) : SQLiteOpenHelper(context, DB_NAME, null,
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
     }
 
-
     fun addMovement(movement: Movement): Boolean {
         val db = writableDatabase
         val cv = ContentValues()
